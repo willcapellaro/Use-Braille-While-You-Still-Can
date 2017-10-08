@@ -3,6 +3,7 @@
 body {
 	font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
 	color: #FFF;
+	background-color: #4484CE;
 }
 
 h1 {
@@ -25,17 +26,26 @@ h2 {
 
 .container {
 	display: grid;
-/*	grid-template-columns: repeat(100px, 10fr);   */
+	grid-template-columns: repeat(10, 100fr);
+
+}
+
+
+
+
+
+
+/* 
+.container {
+	display: grid;
+/*	grid-template-columns: repeat(100px, 10fr);
     grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
     grid-template-rows: 400px repeat(10, 50px 100px 100px);
 	grid-gap: 0px;
 }
 
-body {
-	background-color: #4484CE;
-}
 
-/* title */
+/* title 
 
 .title {
 	grid-column: 1 / -1;
@@ -53,7 +63,7 @@ ul {
 	text-align: center;
 }
 
-/* row-aj */
+/* row-aj 
 
 .rowaj-caption {
 	text-align: center;
@@ -153,4 +163,4 @@ ul {
 	grid-column: 1 / -1;
 	grid-row: 6 / 6;
 }
-
+*/
