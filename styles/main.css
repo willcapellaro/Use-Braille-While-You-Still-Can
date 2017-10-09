@@ -1,9 +1,16 @@
 /* fonts */
 
+
+
 body {
 	font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+	font-weight: 100;
 	color: #FFF;
 	background-color: #4484CE;
+}
+
+.header {
+	grid-column: 1, -1;
 }
 
 h1 {
@@ -11,14 +18,22 @@ h1 {
 	font-size: 80px;
 	font-weight: 900;
 	text-align: center;
+	line-height: 0px;
 }
 
 h2 {
-	font-family: 'Lucida Grande';
+	font-family: 'Segoe UI';
 	font-size: 21px;
 	font-weight: 400;
 	text-align: center;
 	color: #FFF;
+}
+
+h3 {
+	font-weight: 100;
+	padding: 0px 200px 0px 200px;
+	font-size: 18px;
+	text-align: center;
 }
 
 
@@ -26,11 +41,68 @@ h2 {
 
 .container {
 	display: grid;
-	grid-template-columns: repeat(10, 100fr);
+	grid-template-columns: repeat(1, 100fr);
+	grid-template-rows: 20px auto auto 50px;
+}
+
+#maincontent {
+/*	align-items: center;
+*/
+	
+}
+
+.maincontent_container {
+	display: grid;
+	grid-template-columns: 100px 1fr 100px;
+}
+
+.ten_grid {
+	display: grid;
+/*	grid-template-columns: repeat(auto-fit, minmax(60px, 80px));   */
+	grid-template-columns: repeat(5, 80px);
+	grid-row-gap: 20px; 
+	grid-column-gap: 10px;
+	background-color: white;
+	list-style-type:none;
+	text-align: center;
+	font-weight: 500;
+	padding: 10px 10px 10px 10px;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.09), 0 3px 3px rgba(0,0,0,0.15);
+}
+
+.strip {
+	display: grid;
+	grid-template-columns: 1fr 460px 1fr;
+	background-color: none;
+	margin: 0;
+	padding: 0;
+}
+
+.ten_grid li {
+	color: grey;
+	padding-top: 5px;
+	font-size: 40px;
 
 }
 
+.ten_grid li:hover {
+	color: black;
+	padding-top: 5px;
+}
 
+
+.skip {
+	display: inline;
+}
+
+@media (min-width: 1100px) {
+	.ten_grid {
+		grid-template-columns: repeat(10, 80px);
+	}
+	.strip {
+	grid-template-columns: 1fr 912px 1fr;
+	}
+}
 
 
 
