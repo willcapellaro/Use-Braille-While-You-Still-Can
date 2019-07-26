@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Use braille while you still can</title>
+  <link rel="stylesheet" type="text/css" href="styles/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+  <link rel="stylesheet" type="text/css" href="styles/main_refactored.css">
+</head>
+
+
+<body>
+
+
+<main id="maincontent">
+
+<div class="poster">
+<div class="poster_col_1">
+<div class="site_header">
+	<h1>Slate and Stylus Prompter</h1>
+
+<form>
+<div class="content_selector" >
+		<h5>Translation settings</h5><select onchange="window.open(this.options[this.selectedIndex].value)">
+		<option href="index.html" value="index.html">basic</option>
+</select>
+</div>
+</form>
+
+<form>
+  Enter text to convert to braille<br>
+         <textarea id="subject" name="printText" maxlength="112" placeholder="enter up to 112 letters" style="height:200px"></textarea>
+  <br>
+</form>
+
+</body>
