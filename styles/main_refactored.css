@@ -131,6 +131,15 @@ p {
 */}
 
 
+form {
+	text-align: left;
+}
+
+input {
+	height: 200px;
+	line-height: 1px;
+	text-align: right;
+}
 
 
 .uz div:nth-child(1) {
